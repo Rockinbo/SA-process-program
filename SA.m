@@ -12,7 +12,7 @@ for i=1:11:size(Table,1)
     
     pose_vec(j,:)=[x(j,1),y(j,1),z(j,1),Rx(j,1),Ry(j,1),Rz(j,1)];
     
-    T_B_M_a(:,:,j)=RPY2T(x(j,1),y(j,1),z(j,1),Rz(j,1),Ry(j,1),Rx(j,1));
+    T_B_M_a(:,:,j)=RPY2T(x(j,1),y(j,1),z(j,1),Rx(j,1),Ry(j,1),Rz(j,1));
     j=j+1;
 end
 
